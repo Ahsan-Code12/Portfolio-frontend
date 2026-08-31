@@ -1,0 +1,68 @@
+:root {
+  --bg: #FAFAF7;
+  --ink: #16160F;
+  --ink-soft: #55554A;
+  --line: #E4E2D8;
+  --accent: #3548D4;
+  --surface: #F1F0E9;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  color-scheme: light;
+}
+
+html.dark {
+  --bg: #121210;
+  --ink: #F3F2EA;
+  --ink-soft: #A4A296;
+  --line: #2B2A24;
+  --accent: #7C8BFF;
+  --surface: #1B1A16;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body { padding: 0; margin: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a { color: inherit; }
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow-index {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}

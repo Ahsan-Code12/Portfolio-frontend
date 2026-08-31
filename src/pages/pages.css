@@ -1,0 +1,250 @@
+.page-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 32px;
+}
+
+/* ---- Home ---- */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.12;
+  font-weight: 500;
+  margin: 0 0 18px;
+  max-width: 14ch;
+}
+
+.hero-tagline {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 0 0 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 64px;
+}
+
+.btn-primary, .btn-ghost {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 4px;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.btn-ghost:hover { background: var(--surface); }
+
+.section { margin-bottom: 56px; }
+
+.body-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.section-head h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.text-link {
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.featured-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-item {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+.featured-item h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.featured-item p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---- Projects ---- */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.project-card {
+  background: var(--bg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12.5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+}
+
+.project-links {
+  display: flex;
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.project-links a {
+  font-size: 13.5px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Skills ---- */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.skill-group h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+}
+
+/* ---- Experience ---- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+
+.timeline-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.timeline-head h3 {
+  margin: 0;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+
+.period {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.timeline-body p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 56ch;
+}
+
+/* ---- Contact ---- */
+.contact-email {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--ink);
+  text-decoration: none;
+  margin: 8px 0 28px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+
+.social-row {
+  display: flex;
+  gap: 18px;
+}
+
+.social-row a {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.social-row a:hover { color: var(--accent); }
